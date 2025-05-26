@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+pypdf = "*"
+langchainhub = "*"
+faiss-cpu = "*"
+langchain-community = "*"
+langchain-text-splitters = "*"
+langchain-openai = "*"
+dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
