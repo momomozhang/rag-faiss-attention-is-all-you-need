@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+faiss_index_attention/
 
 # C extensions
 *.so
