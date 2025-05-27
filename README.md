@@ -1,10 +1,8 @@
 # FAISS-powered Document Q&A
 
-Built this after working through the Medium analyzer project - wanted to try FAISS instead of Pinecone for vector storage. Uses the "Attention Is All You Need" paper as a test case since it's pretty dense material.
+Built this after working through the Medium analyzer project - wanted to try FAISS instead of Pinecone for vector storage. Uses the "Attention Is All You Need" paper as a test case since it's technical enough to be challenging but well-written enough that retrieval actually works.
 
 ## What I learned
-
-The "Attention Is All You Need" paper makes for a good test case - it's technical enough to be challenging but well-written enough that retrieval actually works.
 
 **FAISS vs Pinecone differences:**
 - FAISS: Faster for small datasets, no API costs, runs offline
@@ -16,6 +14,13 @@ The "Attention Is All You Need" paper makes for a good test case - it's technica
 ## How it works
 
 Takes the Transformer paper, breaks it down into chunks, creates embeddings, then lets you ask questions about it. Got tired of digging through academic papers manually, so this seemed like a good use case.
+
+## Tech details
+- FAISS handles the vector search
+- OpenAI's ada-002 for embeddings  
+- GPT-4 for the actual responses
+- PyPDF to parse the paper
+- Everything gets saved locally
 
 ## Setup
 
@@ -34,10 +39,3 @@ Then just run:
 ```bash
 python main.py
 ```
-
-## Tech details
-- FAISS handles the vector search
-- OpenAI's ada-002 for embeddings  
-- GPT-4 for the actual responses
-- PyPDF to parse the paper
-- Everything gets saved locally
