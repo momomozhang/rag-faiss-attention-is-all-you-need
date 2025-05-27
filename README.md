@@ -1,6 +1,6 @@
 # FAISS-powered Document Q&A
 
-Built this after working through the Medium analyzer project - wanted to try FAISS instead of Pinecone for vector storage. Uses the "Attention Is All You Need" paper as a test case since it's technical enough to be challenging but well-written enough that retrieval actually works.
+Built this after working through the Medium analyzer project - wanted to try FAISS instead of Pinecone for vector storage. Uses the "Attention Is All You Need" paper as a test case. It's technical enough to be challenging but well-written enough that retrieval actually works.
 
 ## What I learned
 
